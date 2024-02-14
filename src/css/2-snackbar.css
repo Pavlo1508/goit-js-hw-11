@@ -1,0 +1,144 @@
+/* Reset styles */
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input {
+	padding: 0;
+}
+
+/* =================================== */
+header button {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.form {
+	width: 360px;
+	margin: 0 auto;
+}
+
+.form .delay-label {
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.04em;
+	color: #2e2f42;
+	margin-bottom: 16px;
+}
+
+.form .delay-label input {
+	border-radius: 5px;
+	border: 1px solid #808080;
+	width: 360px;
+	height: 40px;
+	margin-top: 8px;
+	padding: 10px;
+}
+
+.form .delay-label input:hover {
+	border: 2px solid #000000;
+}
+
+.form .delay-label input:focus{
+	outline: none;
+	border: 1px solid #4E75FF;
+}
+
+.form .delay-label input:valid {
+	border: 1px solid green;
+}
+
+fieldset {
+width: 360px;
+height: 64px;
+border-radius: 5px;
+border: 1px solid #808080;
+text-align: center;
+margin: 0;
+margin-bottom: 24px;
+}
+
+fieldset legend {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.04em;
+	color: #2e2f42;
+	text-align: left;
+}
+
+fieldset label {
+	margin-right: 48px;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #2e2f42;
+}
+
+fieldset label:last-child {
+	margin-right: 0;
+}
+
+.form button {
+	border-radius: 8px;
+	border: none;
+	padding: 8px 16px;
+	width: 360px;
+	height: 40px;
+	background: #4e75ff;
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.04em;
+	color: #fff;
+}
