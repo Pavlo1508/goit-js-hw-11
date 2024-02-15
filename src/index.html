@@ -3,23 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>goit-js-hw-10</title>
+	<title>Images Search</title>
 </head>
 <body>
 	<header>
-		<h1>Hello Homework 10</h1>
+		<h1>Hello Gallery</h1>
 	</header>
 	<main>
-		<section>
-			<ul>
-				<li>
-					<a href="./1-timer.html">My Timer</a>
-				</li>
-				<li>
-					<a href="./2-snackbar.html">My Snackbar</a>
-				</li>
-			</ul>
-		</section>
+		<form class="search-form">
+			<input class="form-input" type="text" name="searchInput">
+			<button class="form-btn">Search</button>
+		</form>
+
+		<span class="loader"></span>
+		
+		<ul class="gallery"></ul>
+
 	</main>
+	<script src="./js/render-functions.js"></script>
+	<script src="./main.js"></script>
+	<script src="./js/pixabay-api.js"></script>
 </body>
 </html>
