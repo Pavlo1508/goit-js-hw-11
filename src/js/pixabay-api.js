@@ -16,9 +16,3 @@ function searchImages() {
 		return res.json();
 	});
 };
-
-export {
-	API_KEY,
-	searchesOptions,
-	searchImages
-};
