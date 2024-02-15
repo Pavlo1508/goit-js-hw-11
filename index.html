@@ -4,6 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Images Search</title>
+	
+  <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-7659544d.js">
+  <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-a51daae5.css">
+  <link rel="stylesheet" href="/goit-js-hw-11/assets/index-46d1e551.css">
 </head>
 <body>
 	<header>
@@ -11,17 +16,15 @@
 	</header>
 	<main>
 		<form class="search-form">
-			<input class="form-input" type="text" name="searchInput">
+			<input class="form-input" type="text" name="searchInput" placeholder="Search image" required>
 			<button class="form-btn">Search</button>
 		</form>
 
-		<span class="loader"></span>
+		<p class="loader">Loading...<span class="loader-line"></span></p>
 		
 		<ul class="gallery"></ul>
 
 	</main>
-	<script src="./js/render-functions.js"></script>
-	<script src="./main.js"></script>
-	<script src="./js/pixabay-api.js"></script>
+	
 </body>
 </html>
