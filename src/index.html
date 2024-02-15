@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Images Search</title>
+	<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 	<header>
@@ -11,17 +12,15 @@
 	</header>
 	<main>
 		<form class="search-form">
-			<input class="form-input" type="text" name="searchInput">
+			<input class="form-input" type="text" name="searchInput" placeholder="Search image" required>
 			<button class="form-btn">Search</button>
 		</form>
 
-		<span class="loader"></span>
+		<p class="loader">Loading...<span class="loader-line"></span></p>
 		
 		<ul class="gallery"></ul>
 
 	</main>
-	<script src="./js/render-functions.js"></script>
-	<script src="./main.js"></script>
-	<script src="./js/pixabay-api.js"></script>
+	<script src="./main.js" type="module"></script>
 </body>
 </html>
