@@ -16,4 +16,4 @@ form.addEventListener('submit', e => {
 	gallaryToRander.gallary.innenHTML = '';
 	pixabay.searchImages().then(images => renderGallery(images)).catch(error => console.log(error));
 	form.reset();
-})
+});
