@@ -18,14 +18,15 @@ form.addEventListener('submit', e => {
     form.reset();
 	} else {
 		gallaryToRander.gallery.innerHTML = '';
-		iziToast.show({
-			iconUrl: iconError,
-			message: 'Please enter what you want to find!',
-			messageColor: '#FAFAFB',
-      backgroundColor: '#EF4040',
-      position: 'topRight'
-		})
-		
+		 setTimeout(() => {
+      iziToast.show({
+        iconUrl: iconError,
+        message: 'Please enter what you want to find!',
+        messageColor: '#FAFAFB',
+        backgroundColor: '#EF4040',
+        position: 'topRight'
+      });
+    }, 200)
 	}
 });
 
