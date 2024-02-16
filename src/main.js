@@ -24,6 +24,7 @@ form.addEventListener('submit', e => {
       backgroundColor: '#EF4040',
       position: 'topRight'
 		})
+		gallaryToRander.gallery.innerHTML = '';
 	}
 });
 
