@@ -22,5 +22,5 @@ import{S as u,i as d}from"./assets/vendor-7659544d.js";(function(){const s=docum
 				</div>
 			</li>`).join(`
 
-`);c.innerHTML=s,f.refresh()}a.style.display="none"}const n=document.querySelector(".search-form");n.addEventListener("submit",o=>{o.preventDefault();const s=n.elements.searchInput.value.trim();s?(a.style.display="block",c.innerHTML="",p.q=s,m().then(t=>g(t)).catch(t=>console.log(t)),n.reset()):(c.innerHTML="",d.show({iconUrl:A,message:"Please enter what you want to find!",messageColor:"#FAFAFB",backgroundColor:"#EF4040",position:"topRight"}))});
+`);c.innerHTML=s,f.refresh()}a.style.display="none"}const n=document.querySelector(".search-form");n.addEventListener("submit",o=>{o.preventDefault();const s=n.elements.searchInput.value.trim();s?(a.style.display="block",c.innerHTML="",p.q=s,m().then(t=>g(t)).catch(t=>console.log(t)),n.reset()):(c.innerHTML="",setTimeout(()=>{d.show({iconUrl:A,message:"Please enter what you want to find!",messageColor:"#FAFAFB",backgroundColor:"#EF4040",position:"topRight"})},200))});
 //# sourceMappingURL=commonHelpers.js.map
