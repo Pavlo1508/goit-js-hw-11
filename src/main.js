@@ -17,6 +17,7 @@ form.addEventListener('submit', e => {
       .catch(error => console.log(error));
     form.reset();
 	} else {
+		gallaryToRander.gallery.innerHTML = '';
 		iziToast.show({
 			iconUrl: iconError,
 			message: 'Please enter what you want to find!',
@@ -24,7 +25,7 @@ form.addEventListener('submit', e => {
       backgroundColor: '#EF4040',
       position: 'topRight'
 		})
-		gallaryToRander.gallery.innerHTML = '';
+		
 	}
 });
 
